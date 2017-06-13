@@ -3,8 +3,8 @@
 import apsw
 
 # Open/Create DB
-connection=apsw.Connection("cookbook1.db3")
-cursor=connection.cursor()
+connection = apsw.Connection("recipebook.db3")
+cursor = connection.cursor()
 # Sqlite3 Table
 sql = 'CREATE TABLE Recipes(pkid INTEGER PRIMARY KEY, name TEXT, \
                             servings TEXT, source TEXT)'
